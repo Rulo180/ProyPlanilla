@@ -30,9 +30,9 @@ class Escuela extends AppModel {
 		'id_escuela' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
+				'message' => 'El campo nombre no puede quedar vacio',
 				//'allowEmpty' => false,
-				//'required' => false,
+				'required' => true,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
@@ -46,7 +46,10 @@ class Escuela extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-		),
+		),'nro_escuela' => array(
+                        'rule' => 'numeric',
+                        'message' => 'Ingrese solo números.'
+                        ),
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed

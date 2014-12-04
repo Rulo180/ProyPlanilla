@@ -8,14 +8,15 @@ App::uses('AppController', 'Controller');
  * @property SessionComponent $Session
  */
 class EscuelasController extends AppController {
-
+        
+        var $helpers = array('Html', 'Form');
 /**
  * Components
  *
  * @var array
  */
 	public $components = array('Paginator', 'Session');
-
+        
 /**
  * index method
  *
@@ -37,8 +38,13 @@ class EscuelasController extends AppController {
 		if (!$this->Escuela->exists($id)) {
 			throw new NotFoundException(__('Invalid escuela'));
 		}
-		$options = array('conditions' => array('Escuela.' . $this->Escuela->primaryKey => $id));
-		$this->set('escuela', $this->Escuela->find('first', $options));
+		//$options = array('conditions' => array('Escuela.' . $this->Escuela->primaryKey => $id));
+		//$this->set('escuela', $this->Escuela->find('first', $options));
+                $escuela = $this->Escuela->findById($id);
+                if (!$escuela) {
+                    throw new NotFoundException(__('Invalid post'));
+                }
+                $this->set('escuela', $escuela);
 	}
 
 /**
@@ -50,10 +56,10 @@ class EscuelasController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Escuela->create();
 			if ($this->Escuela->save($this->request->data)) {
-				$this->Session->setFlash(__('The escuela has been saved.'));
+				$this->Session->setFlash(__('Se ha registrado la escuela correctamente.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The escuela could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('La escuela no ha sido guardada. Intente nuevamente.'));
 			}
 		}
 	}
@@ -67,14 +73,14 @@ class EscuelasController extends AppController {
  */
 	public function edit($id = null) {
 		if (!$this->Escuela->exists($id)) {
-			throw new NotFoundException(__('Invalid escuela'));
+			throw new NotFoundException(__('Escuela no valida.'));
 		}
-		if ($this->request->is(array('post', 'put'))) {
+		if ($this->request->is(array('escuela', 'put'))) {
 			if ($this->Escuela->save($this->request->data)) {
-				$this->Session->setFlash(__('The escuela has been saved.'));
+				$this->Session->setFlash(__('La escuela ha sido guardada.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The escuela could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('La escuela no ha sido grabada. Intente nuevamente.'));
 			}
 		} else {
 			$options = array('conditions' => array('Escuela.' . $this->Escuela->primaryKey => $id));

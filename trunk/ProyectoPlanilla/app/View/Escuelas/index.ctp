@@ -16,7 +16,12 @@
 array('controller' => 'escuelas', 'action' => 'view', $escuela['Escuela']['id_escuela'])); ?>
         </td>
         <td><?php echo $escuela['Escuela']['nro_escuela']; ?></td>
+        <td><?php echo $this->Html->link('Editar', array('action'=>'edit')); ?></td>
     </tr>
     <?php endforeach; ?>
     <?php unset($escuela); ?>
 </table>
+<?php echo $this->Html->link('Agregar Escuela', array('action'=>'add')); ?>
+
+
+
