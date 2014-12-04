@@ -1,2 +1,2 @@
-1417618391
-a:3:{i:0;b:0;s:4:"name";a:6:{s:32:"89cc32398d5fccb6eb48217bbf2b5371";s:16:"`planilla_notas`";s:32:"d2dad351b55cabf125cd9d8d3e6121df";s:10:"`escuelas`";s:32:"dd4a35c8259355254421b737e5f93320";s:22:"`Escuela`.`id_escuela`";s:32:"f3535e6cdc760b3eea20cfda27f7ce68";s:26:"`Escuela`.`nombre_escuela`";s:32:"fb0fb818c60da96e418a8df7c5221e48";s:23:"`Escuela`.`nro_escuela`";s:32:"9acf5bec55604b342790462ed42fcb25";s:9:"`Escuela`";}s:6:"fields";a:2:{s:32:"f07b35de1adceda5c6eaf3f1718f81f8";a:3:{i:0;s:22:"`Escuela`.`id_escuela`";i:1;s:26:"`Escuela`.`nombre_escuela`";i:2;s:23:"`Escuela`.`nro_escuela`";}s:32:"71ddf987f62d4687a227126c37ec9877";a:1:{i:0;s:22:"`Escuela`.`id_escuela`";}}}
+1417708079
+a:2:{i:0;b:0;s:4:"name";a:2:{s:32:"89cc32398d5fccb6eb48217bbf2b5371";s:16:"`planilla_notas`";s:32:"d2dad351b55cabf125cd9d8d3e6121df";s:10:"`escuelas`";}}

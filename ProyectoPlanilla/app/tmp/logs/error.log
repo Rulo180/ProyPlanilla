@@ -68,3 +68,496 @@ Stack Trace:
 #3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-12-04 13:46:35 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php, line 1128]
+2014-12-04 13:46:36 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 14:11:44 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php, line 1128]
+2014-12-04 14:11:44 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 14:48:06 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php, line 1128]
+2014-12-04 14:48:06 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 14:59:15 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php, line 1128]
+2014-12-04 14:59:15 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:23:59 Error: [NotFoundException] Invalid escuela
+Request URL: /ProyectoPlanilla/escuelas/view
+Stack Trace:
+#0 [internal function]: EscuelasController->view()
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-04 15:24:07 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\add.ctp, line 1]
+2014-12-04 15:24:07 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/add
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:28:23 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\index.ctp, line 24]
+2014-12-04 15:28:23 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /ProyectoPlanilla/escuelas
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 24)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 24, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 24, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:28:58 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\index.ctp, line 24]
+2014-12-04 15:28:58 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /ProyectoPlanilla/escuelas
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 24)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 24, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 24, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:29:35 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\index.ctp, line 23]
+2014-12-04 15:29:35 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /ProyectoPlanilla/escuelas
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:30:01 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\index.ctp, line 22]
+2014-12-04 15:30:01 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /ProyectoPlanilla/escuelas
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 22, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 22, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:31:15 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php, line 1128]
+2014-12-04 15:31:15 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:32:54 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\index.ctp, line 23]
+2014-12-04 15:32:54 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /ProyectoPlanilla/escuelas
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:35:58 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\index.ctp, line 23]
+2014-12-04 15:35:58 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /ProyectoPlanilla/escuelas
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:36:02 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\add.ctp, line 1]
+2014-12-04 15:36:02 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/add
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:38:23 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\index.ctp, line 23]
+2014-12-04 15:38:23 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /ProyectoPlanilla/escuelas
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:38:26 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\add.ctp, line 1]
+2014-12-04 15:38:26 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/add
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:42:37 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\index.ctp, line 23]
+2014-12-04 15:42:37 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /ProyectoPlanilla/escuelas
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:42:44 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\add.ctp, line 1]
+2014-12-04 15:42:44 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/add
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:42:59 Error: [NotFoundException] Invalid escuela
+Request URL: /ProyectoPlanilla/escuelas/view
+Stack Trace:
+#0 [internal function]: EscuelasController->view()
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-04 15:43:27 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\add.ctp, line 1]
+2014-12-04 15:43:27 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/add
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:43:48 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\index.ctp, line 23]
+2014-12-04 15:43:48 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 15:44:37 Error: Fatal Error (1): Call to a member function link() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\index.ctp, line 23]
+2014-12-04 15:44:37 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /ProyectoPlanilla/escuelas
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 23, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:01:03 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php, line 1128]
+2014-12-04 16:01:03 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/view/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:01:26 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\add.ctp, line 1]
+2014-12-04 16:01:26 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/add
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:01:35 Error: [NotFoundException] Escuela no valida.
+Request URL: /ProyectoPlanilla/escuelas/edit
+Stack Trace:
+#0 [internal function]: EscuelasController->edit()
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-04 16:01:44 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php, line 1128]
+2014-12-04 16:01:44 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:04:39 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\add.ctp, line 1]
+2014-12-04 16:04:39 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/add
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:08:05 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php, line 1128]
+2014-12-04 16:08:05 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:08:45 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php, line 1128]
+2014-12-04 16:08:45 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:10:53 Error: Fatal Error (1): Call to a member function create() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\add.ctp, line 1]
+2014-12-04 16:10:53 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/add
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:12:30 Error: Fatal Error (1): Call to a member function input() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\View\Escuelas\add.ctp, line 7]
+2014-12-04 16:12:30 Error: [FatalErrorException] Call to a member function input() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/add
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 7, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 7, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:13:20 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php, line 1128]
+2014-12-04 16:13:20 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:16:13 Error: [NotFoundException] Escuela no valida.
+Request URL: /ProyectoPlanilla/escuelas/edit
+Stack Trace:
+#0 [internal function]: EscuelasController->edit()
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-04 16:20:25 Error: [NotFoundException] Escuela no valida.
+Request URL: /ProyectoPlanilla/escuelas/edit
+Stack Trace:
+#0 [internal function]: EscuelasController->edit()
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-04 16:34:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Escuela.id' in 'where clause'
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Escuela...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Escuela...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Escuela...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Escuela), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('findById', Array, Object(Escuela))
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(43): Model->__call('findById', Array)
+#9 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(43): Escuela->findById('1')
+#10 [internal function]: EscuelasController->view('1')
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#14 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-12-04 16:35:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Escuela.id_escuela' in 'where clause'
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Escuela), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('count', Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2829): Model->find('count', Array)
+#7 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(38): Model->exists('1')
+#8 [internal function]: EscuelasController->view('1')
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-04 16:36:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Escuela.id' in 'where clause'
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Escuela...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Escuela...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Escuela...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Escuela), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('findById', Array, Object(Escuela))
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(43): Model->__call('findById', Array)
+#9 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(43): Escuela->findById('1')
+#10 [internal function]: EscuelasController->view('1')
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#14 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-12-04 16:36:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Escuela.id' in 'where clause'
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Escuela...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Escuela...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Escuela...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Escuela), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('findById', Array, Object(Escuela))
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(43): Model->__call('findById', Array)
+#9 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(43): Escuela->findById('1')
+#10 [internal function]: EscuelasController->view('1')
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#14 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-12-04 16:39:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Escuela.id' in 'where clause'
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Escuela...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Escuela...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Escuela...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Escuela), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('findById', Array, Object(Escuela))
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(43): Model->__call('findById', Array)
+#9 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(43): Escuela->findById('1')
+#10 [internal function]: EscuelasController->view('1')
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#14 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-12-04 16:39:22 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Escuela.id' in 'where clause'
+Request URL: /ProyectoPlanilla/escuelas/view/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Escuela...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Escuela...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Escuela...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Escuela), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('findById', Array, Object(Escuela))
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(43): Model->__call('findById', Array)
+#9 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(43): Escuela->findById('2')
+#10 [internal function]: EscuelasController->view('2')
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#14 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-12-04 16:42:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Escuela.id_escuela' in 'where clause'
+Request URL: /ProyectoPlanilla/escuelas/view/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Escuela), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('count', Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2829): Model->find('count', Array)
+#7 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(38): Model->exists('2')
+#8 [internal function]: EscuelasController->view('2')
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-12-04 16:43:13 Error: Fatal Error (1): Call to a member function getDataSource() on a non-object in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php, line 1128]
+2014-12-04 16:43:13 Error: [FatalErrorException] Call to a member function getDataSource() on a non-object
+Request URL: /ProyectoPlanilla/escuelas/view/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 1128, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-04 16:44:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Escuela.id' in 'where clause'
+Request URL: /ProyectoPlanilla/escuelas/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Escuela...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Escuela...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Escuela...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Escuela), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('findById', Array, Object(Escuela))
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(43): Model->__call('findById', Array)
+#9 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(43): Escuela->findById('1')
+#10 [internal function]: EscuelasController->view('1')
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#14 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
