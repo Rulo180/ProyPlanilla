@@ -49,6 +49,9 @@ class Escuela extends AppModel {
 		),'nro_escuela' => array(
                         'rule' => 'numeric',
                         'message' => 'Ingrese solo números.'
+                ), 'telefono_escuela' => array(
+                        'rule' => 'numeric',
+                        'message' => 'Ingrese solo números.'
                         ),
 	);
 
