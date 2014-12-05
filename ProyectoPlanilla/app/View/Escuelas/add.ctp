@@ -1,11 +1,11 @@
 <?php echo $this->Form->create('Escuela');?>
 
 <fieldset>
-    <legend>Registrar nueva escuela:</legend>
+    <legend>Registrar Escuela:</legend>
     
     <?php
-        echo $this->Form->input('nombre');
-        echo $this->Form->input('numero');
+        echo $this->Form->input('nombre_escuela', array('label' => 'Nombre:'));
+        echo $this->Form->input('nro_escuela', array('label' => 'Nro°:'));
     ?>
 </fieldset>
 

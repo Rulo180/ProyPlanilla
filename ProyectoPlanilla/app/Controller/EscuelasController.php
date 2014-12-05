@@ -54,7 +54,6 @@ class EscuelasController extends AppController {
  */
 	public function add() {
 		if ($this->request->is('post')) {
-			$this->Escuela->create();
 			if ($this->Escuela->save($this->request->data)) {
 				$this->Session->setFlash(__('Se ha registrado la escuela correctamente.'));
 				return $this->redirect(array('action' => 'index'));
