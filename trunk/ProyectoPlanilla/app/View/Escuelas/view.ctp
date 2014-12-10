@@ -2,7 +2,9 @@
 
 <p><?php echo $escuela['Escuela']['nro_escuela']; ?></p>
 <p><?php echo $escuela['Escuela']['telefono_escuela']; ?></p>
-<?php /*
+  
+    <?php
+    /*
 echo $this->Html->link('edit', array(
     'action' => 'edit',
     $escuela['Escuela']['id']
