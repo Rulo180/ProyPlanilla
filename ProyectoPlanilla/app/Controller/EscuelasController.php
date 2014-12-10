@@ -39,12 +39,14 @@ class EscuelasController extends AppController {
 			throw new NotFoundException(__('Invalid escuela'));
 		}
 		//$options = array('conditions' => array('Escuela.' . $this->Escuela->primaryKey => $id));
-		//$this->set('escuela', $this->Escuela->find('first', $options));
-                $escuela = $this->Escuela->findById($id);
+                $options = array('conditions' => array('Escuela.id_escuela' => $id));
+		$this->set('escuela', $this->Escuela->find('first', $options));
+                /*Otra forma de hacerlo
+                 * $escuela = $this->Escuela->findByIdEscuela($id);
                 if (!$escuela) {
-                    throw new NotFoundException(__('Invalid post'));
+                    throw new NotFoundException(__('Escuela invalida.'));
                 }
-                $this->set('escuela', $escuela);
+                $this->set('escuela', $escuela);*/
 	}
 
 /**
