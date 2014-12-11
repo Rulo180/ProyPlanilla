@@ -64,7 +64,7 @@ class Escuela extends AppModel {
  */
 	public $hasMany = array(
 		'' => array(
-			'className' => '',
+			'className' => 'Curso',
 			'foreignKey' => 'escuela_id',
 			'dependent' => false,
 			'conditions' => '',
