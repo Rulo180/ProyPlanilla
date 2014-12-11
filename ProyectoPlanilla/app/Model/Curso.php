@@ -6,6 +6,10 @@ class Curso extends AppModel{
     public $primaryKey = 'id_curso';
     
     
-    public $hasOne = 'Escuela';
+    public $belongsTo = ['Escuela' => array(
+            'className' => 'Escuela',
+            'foreignKey' => 'escuela_id'
+        )
+        ];
 }
 
