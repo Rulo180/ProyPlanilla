@@ -10,5 +10,5 @@
     ?>
 </fieldset>
 
-<?php echo $this->Form->end('Agregar escuela'); ?>
+<?php echo $this->Form->end('Guardar'); ?>
 

@@ -32,7 +32,7 @@ class Escuela extends AppModel {
 				'rule' => array('notEmpty'),
 				'message' => 'El campo nombre no puede quedar vacio',
 				//'allowEmpty' => false,
-				'required' => true,
+				'required' => true
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
@@ -51,6 +51,7 @@ class Escuela extends AppModel {
                         'message' => 'Ingrese solo números.'
                 ), 'telefono_escuela' => array(
                         'rule' => 'numeric',
+                        'allowEmpty' => true,
                         'message' => 'Ingrese solo números.'
                         ),
 	);
