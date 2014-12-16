@@ -35,5 +35,15 @@ class CursosController extends AppController{
             $this->Session->setFlash('El curso no ha sido guardado. Intente nuevamente.');
         }
     }
+    
+    public function edit($id){
+        if($this->request->is('get')){
+            $this->set('Escuela', $this->Curso->findByIdCurso($id));
+        }else{
+            $this->Curso->save($this->request->data);
+            $this->Session->setFlash(__('El curso ha sido guardado.'));
+            return $this->redirect(array('action' => 'index'));
+        }
+    }
 }
 

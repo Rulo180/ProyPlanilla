@@ -11,5 +11,5 @@
     ?>
 </fieldset>
 <?php
-echo $this->Form->end('Guardar');
+    echo $this->Form->end('Guardar');
 ?>

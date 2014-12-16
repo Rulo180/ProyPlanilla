@@ -1337,3 +1337,177 @@ Stack Trace:
 #11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
 #12 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2014-12-16 16:16:48 Error: [MissingActionException] Action CursosController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'CursosController',
+  'action' => 'delete',
+)
+Request URL: /ProyectoPlanilla/cursos/delete/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#2 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-12-16 16:17:51 Error: Fatal Error (1): Cannot access empty property in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php, line 1058]
+2014-12-16 16:17:51 Error: [FatalErrorException] Cannot access empty property
+Request URL: /ProyectoPlanilla/escuelas/edit/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-16 16:18:13 Error: Fatal Error (1): Cannot access empty property in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php, line 1058]
+2014-12-16 16:18:13 Error: [FatalErrorException] Cannot access empty property
+Request URL: /ProyectoPlanilla/escuelas/edit/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-16 16:19:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Escuela.id' in 'where clause'
+Request URL: /ProyectoPlanilla/escuelas/edit/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Escuela...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Escuela...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Escuela...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Escuela), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('findById', Array, Object(Escuela))
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(79): Model->__call('findById', Array)
+#9 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(79): Escuela->findById('1')
+#10 [internal function]: EscuelasController->edit('1')
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#14 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-12-16 16:19:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Escuela.id' in 'where clause'
+Request URL: /ProyectoPlanilla/escuelas/edit/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Escuela...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Escuela...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Escuela...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Escuela), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('findById', Array, Object(Escuela))
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(79): Model->__call('findById', Array)
+#9 C:\wamp\www\ProyectoPlanilla\app\Controller\EscuelasController.php(79): Escuela->findById('escuela1')
+#10 [internal function]: EscuelasController->edit('1')
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EscuelasController), Array)
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EscuelasController), Object(CakeRequest))
+#14 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-12-16 16:20:11 Error: Fatal Error (1): Cannot access empty property in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php, line 1058]
+2014-12-16 16:20:11 Error: [FatalErrorException] Cannot access empty property
+Request URL: /ProyectoPlanilla/escuelas/edit/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-16 16:20:53 Error: Fatal Error (1): Cannot access empty property in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php, line 1058]
+2014-12-16 16:20:53 Error: [FatalErrorException] Cannot access empty property
+Request URL: /ProyectoPlanilla/escuelas/edit/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-16 16:21:00 Error: [MissingViewException] View file "C:\wamp\www\ProyectoPlanilla\app\View\Cursos\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ProyectoPlanilla\\app\\View\\Cursos\\view.ctp',
+)
+Request URL: /ProyectoPlanilla/cursos/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-16 16:21:22 Error: Fatal Error (1): Cannot access empty property in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php, line 1058]
+2014-12-16 16:21:22 Error: [FatalErrorException] Cannot access empty property
+Request URL: /ProyectoPlanilla/escuelas/edit/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-16 16:28:27 Error: [MissingViewException] View file "C:\wamp\www\ProyectoPlanilla\app\View\Cursos\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ProyectoPlanilla\\app\\View\\Cursos\\edit.ctp',
+)
+Request URL: /ProyectoPlanilla/cursos/edit/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-16 16:33:40 Error: Fatal Error (1): Cannot access empty property in [C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php, line 1058]
+2014-12-16 16:33:40 Error: [FatalErrorException] Cannot access empty property
+Request URL: /ProyectoPlanilla/escuelas/edit/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', 'C:\\wamp\\www\\Pro...', 1058, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-16 16:39:25 Error: [NotFoundException] Curso no valido.
+Request URL: /ProyectoPlanilla/cursos/edit
+Stack Trace:
+#0 [internal function]: CursosController->edit()
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-16 16:40:22 Error: [NotFoundException] Curso no válido.
+Request URL: /ProyectoPlanilla/cursos/edit
+Stack Trace:
+#0 [internal function]: CursosController->edit()
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-16 16:40:41 Error: [NotFoundException] Curso no válido.
+Request URL: /ProyectoPlanilla/cursos/edit
+Stack Trace:
+#0 [internal function]: CursosController->edit()
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-12-16 16:42:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`planilla_notas`.`cursos`, CONSTRAINT `fk_cursos_escuelas` FOREIGN KEY (`escuela_id`) REFERENCES `escuelas` (`id_escuela`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /ProyectoPlanilla/cursos/edit
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `pl...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pl...')
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1854): DboSource->create(Object(Curso), Array, Array)
+#4 C:\wamp\www\ProyectoPlanilla\app\Controller\CursosController.php(43): Model->save(Array)
+#5 [internal function]: CursosController->edit()
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CursosController), Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
+#9 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
