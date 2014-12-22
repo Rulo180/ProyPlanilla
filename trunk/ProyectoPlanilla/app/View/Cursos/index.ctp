@@ -1,7 +1,7 @@
 <h1>Lista de Cursos</h1>
 <table>
     <tr>
-        <th>Id</th>
+        <th>ID</th>
         <th>Año</th>
         <th>División</th>
         <th>Escuela</th>
@@ -15,7 +15,7 @@
         <td><?php echo $curso['Curso']['id_curso']; ?></td>
         <td>
             <?php echo $this->Html->link($curso['Curso']['año_curso'],
-array('controller' => 'cursos', 'action' => 'view', $curso['Curso']['id_curso'])); ?>
+array('controller' => 'alumnos', 'action' => 'index', $curso['Curso']['id_curso'])); ?>
         </td>
         <td><?php echo $curso['Curso']['division_curso']; ?></td>
         <td><?php echo $curso['Curso']['escuela_id']; ?></td>

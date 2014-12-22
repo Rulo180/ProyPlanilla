@@ -14,16 +14,16 @@ class Curso extends AppModel{
     
     
     public $validate = array(
-        'año_curso' => array(
-            'rule' => array('notEmpty'),
-            'message' => 'El campo año no puede quedar vacio',
-            'required' => true
-        ),
-        'division_curso' => array(
-            'rule' => array('notEmpty'),
-            'message' => 'El campo división no puede quedar vacio',
-            'required' => true
-        )
+            'año_curso' => array(
+                'rule' => 'notEmpty',
+                'message' => 'El campo año no puede quedar vacio',
+                'required' => true
+            ),
+            'division_curso' => array(
+                'rule' => 'notEmpty',
+                'message' => 'El campo división no puede quedar vacio',
+                'required' => true
+            )
     );
 }
 
