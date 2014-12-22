@@ -27,29 +27,19 @@ class Escuela extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'id_escuela' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				'message' => 'El campo nombre no puede quedar vacio',
-				//'allowEmpty' => false,
-				'required' => true
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
 		'nombre_escuela' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),'nro_escuela' => array(
+			'rule' => 'notEmpty',
+			'message' => 'El campo nombre no puede quedar vacio',
+			//'allowEmpty' => false,
+			'required' => true,
+			//'last' => false, // Stop validation after this rule
+			//'on' => 'create', // Limit validation to 'create' or 'update' operations
+		),
+                'nro_escuela' => array(
                         'rule' => 'numeric',
                         'message' => 'Ingrese solo números.'
-                ), 'telefono_escuela' => array(
+                ), 
+                'telefono_escuela' => array(
                         'rule' => 'numeric',
                         'allowEmpty' => true,
                         'message' => 'Ingrese solo números.'

@@ -9,7 +9,7 @@ App::uses('AppController', 'Controller');
  */
 class EscuelasController extends AppController {
         
-        var $helpers = array('Html', 'Form');
+        var $helpers = array('Html', 'Form', 'Session');
 /**
  * Components
  *
@@ -42,11 +42,17 @@ class EscuelasController extends AppController {
 		$this->set('escuela', $this->Escuela->find('first', $options));
                 
                 /*Segun Tut de Blog
-                $escuela = $this->Escuela->findByIdEscuela($id);
-                if (!$escuela) {
-                    throw new NotFoundException(__('Escuela invalida.'));
+                public function view($id = null) {
+                if (!$id) {
+                    throw new NotFoundException(__('Invalid post'));
                 }
-                $this->set('escuela', $escuela);*/
+
+                $escuela = $this->Escuela->findById($id);
+                if (!$escuela) {
+                    throw new NotFoundException(__('Invalid escuela.'));
+                }
+                $this->set('escuela', $escuela);
+                }*/
                 
         }
 
@@ -56,15 +62,16 @@ class EscuelasController extends AppController {
  * @return void
  */
 	public function add() {
-		if ($this->request->is('post')) {
+            
+                if ($this->request->is('post')) {
                     $this->Escuela->create();
-                    if ($this->Escuela->save($this->request->data)) {
-                        $this->Session->setFlash(__('La escuela ha sido guardada.'));
-                        return $this->redirect(array('action' => 'index'));
-                    }
+                if ($this->Escuela->save($this->request->data)) {
+                    $this->Session->setFlash(__('La escuela ha sido guardada.'));
+                    return $this->redirect(array('action' => 'index'));
+                }
                 $this->Session->setFlash(__('La escuela no ha sido guardada. Intente nuevamente.'));
                 }
-	}
+    }
 /**
  * edit method
  *
@@ -73,7 +80,30 @@ class EscuelasController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
-            $this->Escuela->id = $id;
+            
+            if (!$id) {
+                throw new NotFoundException(__('Id invalido.'));
+            }
+            
+            $escuela = $this->Escuela->findByIdEscuela($id);
+            if (!$escuela) {
+                throw new NotFoundException(__('Escuela invalida.'));
+            }
+
+            if ($this->request->is(array('post', 'put'))) {
+                $this->Escuela->id = $id;
+                if ($this->Escuela->save($this->request->data)) {
+                    $this->Session->setFlash(__('La escuela ha sido actualizada.'));
+                    return $this->redirect(array('action' => 'index'));
+                }
+                $this->Session->setFlash(__('La escuela no ha sido guardada. Intente nuevamente.'));
+        }
+
+            if (!$this->request->data) {
+                $this->request->data = $escuela;
+            }
+            //Forma 1 ------------------------------------
+            /*$this->Escuela->id = $id;
             if($this->request->is('get')){
                 //$this->request->data = $this->Escuela->read();
                 $this->set('Escuela', $this->Escuela->findByIdEscuela($id));
@@ -84,7 +114,8 @@ class EscuelasController extends AppController {
                 }else{
 			$this->Session->setFlash(__('La escuela no ha sido guardada. Intente nuevamente.'));
                 }
-            }
+            }*/
+            //Forma 2 ---------------------------------------------------------
 //		if (!$this->Escuela->exists($id)) {
 //			throw new NotFoundException(__('Escuela no valida.'));
 //		}
@@ -99,7 +130,7 @@ class EscuelasController extends AppController {
 //			$options = array('conditions' => array('Escuela.' . $this->Escuela->primaryKey => $id));
 //			$this->request->data = $this->Escuela->find('first', $options);
 //		}
-            
+
  }
 /**
  * delete method
@@ -119,19 +150,5 @@ class EscuelasController extends AppController {
                 );
                 return $this->redirect(array('action' => 'index'));
                 }
-                /*Autogenerado
-                $this->Escuela->id_escuela = $id;
-                 
-		if (!$this->Escuela->exists()) {
-			throw new NotFoundException(__('Escuela invalida'));
-		}
-		$this->request->allowMethod('post', 'delete');
-		if ($this->Escuela->delete()) {
-			$this->Session->setFlash(__('La escuela ha sido borrada.'));
-		} else {
-			$this->Session->setFlash(__('La escuela no ha sido borrada. Por favor, intente nuevamente.'));
-		}
-		return $this->redirect(array('action' => 'index'));
-                 */
 	}
 }

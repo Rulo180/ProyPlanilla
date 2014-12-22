@@ -16,15 +16,18 @@ class CursosController extends AppController{
 		$this->set('cursos', $this->Paginator->paginate());
 	}
         
-    public function view($id){
+    public function view($id = null) {
+        if (!$id) {
+            throw new NotFoundException(__('Invalid post'));
+        }
+
         $curso = $this->Curso->findByIdCurso($id);
-        if(!$curso){
+        if (!$curso) {
             throw new NotFoundException(__('Curso invalido.'));
         }
         $this->set('curso', $curso);
-        
     }
-    
+        
     public function add(){
         if($this->request->is('post')){
             $this->Curso->create();
@@ -37,13 +40,38 @@ class CursosController extends AppController{
     }
     
     public function edit($id){
-        if($this->request->is('get')){
-            $this->set('Escuela', $this->Curso->findByIdCurso($id));
-        }else{
-            $this->Curso->save($this->request->data);
-            $this->Session->setFlash(__('El curso ha sido guardado.'));
-            return $this->redirect(array('action' => 'index'));
+            if (!$id) {
+                throw new NotFoundException(__('Id invalido.'));
+            }
+            
+            $curso = $this->Curso->findByIdCurso($id);
+            if (!$curso) {
+                throw new NotFoundException(__('Curso invalido.'));
+            }
+
+            if ($this->request->is(array('post', 'put'))) {
+                $this->Curso->id = $id;
+                if ($this->Curso->save($this->request->data)) {
+                    $this->Session->setFlash(__('El curso ha sido actualizado.'));
+                    return $this->redirect(array('action' => 'index'));
+                }
+                $this->Session->setFlash(__('El curso no ha sido guardado. Intente nuevamente.'));
         }
+
+            if (!$this->request->data) {
+                $this->request->data = $curso;
+            }
     }
+    
+    public function delete($id = null) {
+		if ($this->request->is('get')) {
+                    throw new MethodNotAllowedException();
+                }
+
+                if ($this->Curso->delete($id)) {
+                    $this->Session->setFlash('El curso  ha sido borrado.');
+                return $this->redirect(array('action' => 'index'));
+                }
+	}
 }
 
