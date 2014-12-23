@@ -27,5 +27,5 @@ class Alumno extends AppModel{
 			//'last' => false, // Stop validation after this rule
 			//'on' => 'create', // Limit validation to 'create' or 'update' operations
             )        
-    );
+        );
 }
