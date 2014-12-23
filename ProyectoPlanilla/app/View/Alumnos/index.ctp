@@ -24,4 +24,4 @@
     <?php endforeach; ?>
     <?php unset($alumno); ?>
 </table>
-<?php echo $this->Html->link('Agregar alumno', array('action'=>'add')); ?>
+<?php echo $this->Html->link('Agregar alumno', array('action'=>'add'));?>

@@ -25,4 +25,4 @@ array('controller' => 'alumnos', 'action' => 'index', $curso['Curso']['id_curso'
     <?php endforeach; ?>
     <?php unset($curso); ?>
 </table>
-<?php echo $this->Html->link('Agregar curso', array('action'=>'add')); ?>
+<?php echo $this->Html->link('Agregar curso', array('action'=>'add', $id_escuela)); ?>
