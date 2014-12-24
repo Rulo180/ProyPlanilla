@@ -7,7 +7,7 @@ echo $this->Form->create('Curso'); ?>
     <?php 
         echo $this->Form->input('año_curso', array('label' => 'Año:'));
         echo $this->Form->input('division_curso', array('label' => 'División:'));
-        echo $this->Form->input('escuela_id', array('options' => array($id_escuela => $id_escuela), 'default' => $id_escuela,'label' => 'Escuela:'));
+        echo $this->Form->input('escuela_id', array('options' => array($id_escuela => $id_escuela), 'default' => $id_escuela,'label' => 'Escuela:', 'type' => 'hidden'));
     ?>
 </fieldset>
 

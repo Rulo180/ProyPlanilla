@@ -1,4 +1,4 @@
-<h1>Lista de Alumnos</h1>
+<h1><b>Lista de Alumnos</b></h1>
 
 <table>
     <tr>
@@ -24,4 +24,5 @@
     <?php endforeach; ?>
     <?php unset($alumno); ?>
 </table>
-<?php echo $this->Html->link('Agregar alumno', array('action'=>'add'));?>
+<?php echo $this->Html->link('Agregar alumno', array('action'=>'add', $id_curso));
+      //echo $this->Html->link('Volver', array('controller' => 'cursos', 'action'=>'index', ));?>

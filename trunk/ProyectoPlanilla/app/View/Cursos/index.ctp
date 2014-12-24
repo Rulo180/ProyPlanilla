@@ -1,10 +1,9 @@
-<h1>Lista de Cursos</h1>
+<h1><b>Lista de Cursos: <?php echo $nombre_escuela; ?></b></h1>
 <table>
     <tr>
         <th>ID</th>
         <th>Año</th>
         <th>División</th>
-        <th>Escuela</th>
         <th>Acciones</th>
     </tr>
 
@@ -18,11 +17,12 @@
 array('controller' => 'alumnos', 'action' => 'index', $curso['Curso']['id_curso'])); ?>
         </td>
         <td><?php echo $curso['Curso']['division_curso']; ?></td>
-        <td><?php echo $curso['Curso']['escuela_id']; ?></td>
         <td><?php echo $this->Html->link('Editar', array('action'=>'edit',$curso['Curso']['id_curso'])); ?>
         <?php echo $this->Form->postLink('Borrar', array('action'=>'delete',$curso['Curso']['id_curso']), array('confirm' => 'Esta seguro?')); ?></td>
     </tr>
     <?php endforeach; ?>
     <?php unset($curso); ?>
 </table>
-<?php echo $this->Html->link('Agregar curso', array('action'=>'add', $id_escuela)); ?>
+<?php echo $this->Html->link('Agregar curso', array('action'=>'add', $id_escuela));?>
+<?php echo $this->Html->link('Volver', array('controller' => 'escuelas', 'action'=>'index'));?>
+<?php 
