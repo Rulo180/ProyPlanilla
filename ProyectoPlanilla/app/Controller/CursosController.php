@@ -11,6 +11,8 @@ class CursosController extends AppController{
     public function index($id) {
         $this->Paginator->settings = array(
         'conditions' => array('Curso.escuela_id' => $id));
+        $this->loadModel('Escuela', $id);
+        $this->set('nombre_escuela', $this->Escuela->field('nombre_escuela'));
         $this->set('id_escuela', $id);
         
 	$this->Curso->recursive = 0;
@@ -29,13 +31,13 @@ class CursosController extends AppController{
         $this->set('curso', $curso);
     }
         
-    public function add($id){
-        $this->set('id_escuela', $id);
+    public function add($id_escuela){
+        $this->set('id_escuela', $id_escuela);
         if($this->request->is('post')){
             $this->Curso->create();
             if($this->Curso->save($this->request->data)){
                 $this->Session->setFlash('El curso ha sido guardado.');
-                return $this->redirect(array('action'=> 'index', $id));
+                return $this->redirect(array('action'=> 'index', $id_escuela));
             }
             $this->Session->setFlash('El curso no ha sido guardado. Intente nuevamente.');
         }
@@ -55,7 +57,8 @@ class CursosController extends AppController{
                 $this->Curso->id = $id;
                 if ($this->Curso->save($this->request->data)) {
                     $this->Session->setFlash(__('El curso ha sido actualizado.'));
-                    return $this->redirect(array('action' => 'index', $id));
+                    $id_escuela = $this->Curso->field('escuela_id');
+                    return $this->redirect(array('action' => 'index', $id_escuela));
                 }
                 $this->Session->setFlash(__('El curso no ha sido guardado. Intente nuevamente.'));
         }
@@ -71,9 +74,9 @@ class CursosController extends AppController{
                 }
 
                 if ($this->Curso->delete($id)) {
-                    $id = $this->Curso->field('escuela_id');
+                    $id_escuela = $this->Curso->field('escuela_id');
                     $this->Session->setFlash('El curso  ha sido borrado.');
-                return $this->redirect(array('action' => 'index', $id));
+                return $this->redirect(array('action' => 'index', $id_escuela));
                 }
 	}
 }

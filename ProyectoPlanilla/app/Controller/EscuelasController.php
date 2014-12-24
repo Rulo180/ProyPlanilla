@@ -102,34 +102,6 @@ class EscuelasController extends AppController {
             if (!$this->request->data) {
                 $this->request->data = $escuela;
             }
-            //Forma 1 ------------------------------------
-            /*$this->Escuela->id = $id;
-            if($this->request->is('get')){
-                //$this->request->data = $this->Escuela->read();
-                $this->set('Escuela', $this->Escuela->findByIdEscuela($id));
-            }else{
-                if ($this->Escuela->save($this->request->data)) {
-			$this->Session->setFlash(__('La escuela ha sido guardada.'));
-                        return $this->redirect(array('action' => 'index'));
-                }else{
-			$this->Session->setFlash(__('La escuela no ha sido guardada. Intente nuevamente.'));
-                }
-            }*/
-            //Forma 2 ---------------------------------------------------------
-//		if (!$this->Escuela->exists($id)) {
-//			throw new NotFoundException(__('Escuela no valida.'));
-//		}
-//		if ($this->request->is(array('escuela', 'put'))) {
-//			if ($this->Escuela->save($this->request->data)) {
-//				$this->Session->setFlash(__('La escuela ha sido guardada.'));
-//				return $this->redirect(array('action' => 'index'));
-//			} else {
-//				$this->Session->setFlash(__('La escuela no ha sido grabada. Intente nuevamente.'));
-//			}
-//		} else {
-//			$options = array('conditions' => array('Escuela.' . $this->Escuela->primaryKey => $id));
-//			$this->request->data = $this->Escuela->find('first', $options);
-//		}
 
  }
 /**

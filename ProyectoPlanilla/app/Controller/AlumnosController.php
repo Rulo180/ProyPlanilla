@@ -9,18 +9,18 @@ class AlumnosController extends AppController{
     public function index($id_curso) {
         $this->Paginator->settings = array(
         'conditions' => array('Alumno.curso_id' => $id_curso));
-	
+	$this->set('id_curso', $id_curso);
         $this->Alumno->recursive = 0;
 	$this->set('alumnos', $this->Paginator->paginate());
 	}
         
-    public function add() {
-            
+    public function add($id_curso) {
+                $this->set('id_curso', $id_curso);
                 if ($this->request->is('post')) {
                     $this->Alumno->create();
                 if ($this->Alumno->save($this->request->data)) {
                     $this->Alumno->setFlash(__('El alumno ha sido guardado.'));
-                    return $this->redirect(array('action' => 'index'));
+                    return $this->redirect(array('action' => 'index', $id_curso));
                 }
                 $this->Session->setFlash(__('El alumno no ha sido guardado. Intente nuevamente.'));
                 }
@@ -40,7 +40,8 @@ class AlumnosController extends AppController{
                 $this->Alumno->id = $id;
                 if ($this->Alumno->save($this->request->data)) {
                     $this->Session->setFlash(__('El alumno ha sido actualizado.'));
-                    return $this->redirect(array('action' => 'index'));
+                    $id_curso = $this->Alumno->field('curso_id');
+                    return $this->redirect(array('action' => 'index', $id_curso));
                 }
                 $this->Session->setFlash(__('El alumno no ha sido guardado. Intente nuevamente.'));
         }
@@ -57,7 +58,8 @@ class AlumnosController extends AppController{
 
                 if ($this->Alumno->delete($id)) {
                     $this->Session->setFlash('El alumno  ha sido borrado.');
-                return $this->redirect(array('action' => 'index'));
+                    $id_curso = $this->Alumno->field('curso_id');
+                    return $this->redirect(array('action' => 'index', $id_curso));
                 }
 	}
     

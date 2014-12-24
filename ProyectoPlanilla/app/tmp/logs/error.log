@@ -2253,3 +2253,119 @@ Stack Trace:
 #3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CursosController), Object(CakeRequest))
 #4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-12-24 14:16:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`planilla_notas`.`alumnos`, CONSTRAINT `fk_alumnos_cursos1` FOREIGN KEY (`curso_id`) REFERENCES `cursos` (`id_curso`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /ProyectoPlanilla/alumnos/add/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `pl...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pl...')
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1854): DboSource->create(Object(Alumno), Array, Array)
+#4 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(21): Model->save(Array)
+#5 [internal function]: AlumnosController->add('1')
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#9 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-12-24 14:16:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`planilla_notas`.`alumnos`, CONSTRAINT `fk_alumnos_cursos1` FOREIGN KEY (`curso_id`) REFERENCES `cursos` (`id_curso`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /ProyectoPlanilla/alumnos/add/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `pl...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pl...')
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1854): DboSource->create(Object(Alumno), Array, Array)
+#4 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(21): Model->save(Array)
+#5 [internal function]: AlumnosController->add('1')
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#9 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-12-24 14:34:34 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'setFlash' at line 1
+Request URL: /ProyectoPlanilla/alumnos/add/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('setFlash', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('setFlash', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('setFlash', Array, Array)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('setFlash', Array, Object(Alumno))
+#5 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(22): Model->__call('setFlash', Array)
+#6 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(22): Alumno->setFlash('El alumno ha si...')
+#7 [internal function]: AlumnosController->add('1')
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-24 14:35:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`planilla_notas`.`alumnos`, CONSTRAINT `fk_alumnos_cursos1` FOREIGN KEY (`curso_id`) REFERENCES `cursos` (`id_curso`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /ProyectoPlanilla/alumnos/add/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `pl...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pl...')
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1854): DboSource->create(Object(Alumno), Array, Array)
+#4 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(21): Model->save(Array)
+#5 [internal function]: AlumnosController->add('1')
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#9 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-12-24 14:36:34 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'setFlash' at line 1
+Request URL: /ProyectoPlanilla/alumnos/add/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('setFlash', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('setFlash', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('setFlash', Array, Array)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('setFlash', Array, Object(Alumno))
+#5 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(22): Model->__call('setFlash', Array)
+#6 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(22): Alumno->setFlash('El alumno ha si...')
+#7 [internal function]: AlumnosController->add('1')
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-24 14:51:25 Error: Fatal Error (1): Call to a member function field() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\Controller\CursosController.php, line 15]
+2014-12-24 14:51:25 Error: [FatalErrorException] Call to a member function field() on a non-object
+Request URL: /ProyectoPlanilla/cursos/index/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 15, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 15, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-12-24 15:22:20 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'setFlash' at line 1
+Request URL: /ProyectoPlanilla/alumnos/add/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('setFlash', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('setFlash', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('setFlash', Array, Array)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('setFlash', Array, Object(Alumno))
+#5 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(22): Model->__call('setFlash', Array)
+#6 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(22): Alumno->setFlash('El alumno ha si...')
+#7 [internal function]: AlumnosController->add('2')
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-12-24 15:23:41 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'setFlash' at line 1
+Request URL: /ProyectoPlanilla/alumnos/add/36
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('setFlash', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('setFlash', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('setFlash', Array, Array)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('setFlash', Array, Object(Alumno))
+#5 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(22): Model->__call('setFlash', Array)
+#6 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(22): Alumno->setFlash('El alumno ha si...')
+#7 [internal function]: AlumnosController->add('36')
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
