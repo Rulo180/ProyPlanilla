@@ -19,8 +19,11 @@ array('controller' => 'cursos', 'action' => 'index', $escuela['Escuela']['id_esc
         </td>
         <td><?php echo $escuela['Escuela']['nro_escuela']; ?></td>
         <td><?php echo $escuela['Escuela']['telefono_escuela']; ?></td>
-        <td><?php echo $this->Html->link('Editar', array('action'=>'edit',$escuela['Escuela']['id_escuela'])); ?>
-        <?php echo $this->Form->postLink('Borrar', array('action'=>'delete',$escuela['Escuela']['id_escuela']), array('confirm' => 'Esta seguro?')); ?></td>
+        <td>
+            <?php echo $this->Html->link('Ver Cierres', array('controller' => 'cierres', 'action'=>'index',$escuela['Escuela']['id_escuela'])); ?> - 
+            <?php echo $this->Html->link('Editar', array('action'=>'edit',$escuela['Escuela']['id_escuela'])); ?> - 
+            <?php echo $this->Form->postLink('Borrar', array('action'=>'delete',$escuela['Escuela']['id_escuela']), array('confirm' => 'Esta seguro?')); ?>
+        </td>
     </tr>
     <?php endforeach; ?>
     <?php unset($escuela); ?>
