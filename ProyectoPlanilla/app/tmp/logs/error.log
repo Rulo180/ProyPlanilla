@@ -2393,3 +2393,56 @@ Stack Trace:
 #3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CierresController), Object(CakeRequest))
 #4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-01-02 13:31:34 Error: [MissingViewException] View file "C:\wamp\www\ProyectoPlanilla\app\View\Cierres\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ProyectoPlanilla\\app\\View\\Cierres\\index.ctp',
+)
+Request URL: /ProyectoPlanilla/cierres/index/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CierresController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-02 14:52:04 Error: [MissingControllerException] Controller class NotasController could not be found.
+Exception Attributes: array (
+  'class' => 'NotasController',
+  'plugin' => NULL,
+)
+Request URL: /ProyectoPlanilla/notas/index/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-02 15:38:13 Error: [MissingViewException] View file "C:\wamp\www\ProyectoPlanilla\app\View\Cierres\edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ProyectoPlanilla\\app\\View\\Cierres\\edit.ctp',
+)
+Request URL: /ProyectoPlanilla/cierres/edit/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CierresController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-02 15:42:39 Error: [MissingControllerException] Controller class NotasController could not be found.
+Exception Attributes: array (
+  'class' => 'NotasController',
+  'plugin' => NULL,
+)
+Request URL: /ProyectoPlanilla/notas/index/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-02 15:50:08 Error: [MissingActionException] Action AlumnosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'AlumnosController',
+  'action' => 'view',
+)
+Request URL: /ProyectoPlanilla/alumnos/view/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#2 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

@@ -27,5 +27,30 @@ class Cierre extends AppModel{
 			'counterQuery' => ''
 		)
 	);
+    
+    public $validate = array(
+            'trimestre' => array(
+                'noVacio' => array(
+                    'rule' => 'notEmpty',
+                    'message' => 'El campo trimestre no puede quedar vacio',
+                    'required' => true
+                ),'numerico' => array(
+                    'rule' => 'numeric',
+                    'required' => true,
+                    'message' => 'El campo trimestre debe ser númerico.'
+                )
+            ),
+            'fecha_cierre' => array(
+                'noVacio' => array(
+                    'rule' => 'notEmpty',
+                    'message' => 'El campo fecha no puede quedar vacio',
+                    'required' => true
+                ),'fecha' => array(
+                    'rule' => 'date',
+                    'message' => 'Ingrese una fecha válida.',
+                    'allowEmpty' => true
+                )
+            )
+    );
 }
 
