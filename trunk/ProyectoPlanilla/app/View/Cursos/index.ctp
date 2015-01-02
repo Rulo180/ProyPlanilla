@@ -13,16 +13,18 @@
     <tr>
         <td><?php echo $curso['Curso']['id_curso']; ?></td>
         <td>
-            <?php echo $this->Html->link($curso['Curso']['año_curso'],
-array('controller' => 'alumnos', 'action' => 'index', $curso['Curso']['id_curso'])); ?>
+            <?php echo $curso['Curso']['año_curso'] ?>
         </td>
         <td><?php echo $curso['Curso']['division_curso']; ?></td>
-        <td><?php echo $this->Html->link('Editar', array('action'=>'edit',$curso['Curso']['id_curso'])); ?>
-        <?php echo $this->Form->postLink('Borrar', array('action'=>'delete',$curso['Curso']['id_curso']), array('confirm' => 'Esta seguro?')); ?></td>
+        <td>
+            <?php echo $this->Html->link('Alumnos', array('controller' => 'alumnos', 'action' => 'index', $curso['Curso']['id_curso'])); ?>
+            <?php echo $this->Html->link('Editar', array('action'=>'edit',$curso['Curso']['id_curso'])); ?>
+            <?php echo $this->Form->postLink('Borrar', array('action'=>'delete',$curso['Curso']['id_curso']), array('confirm' => 'Esta seguro?')); ?>
+        </td>
     </tr>
     <?php endforeach; ?>
     <?php unset($curso); ?>
 </table>
-<?php echo $this->Html->link('Agregar curso', array('action'=>'add', $id_escuela));?>
+<?php echo $this->Html->link('Agregar curso', array('action'=>'add', $id_escuela));?> 
 <?php echo $this->Html->link('Volver', array('controller' => 'escuelas', 'action'=>'index'));?>
 <?php 
