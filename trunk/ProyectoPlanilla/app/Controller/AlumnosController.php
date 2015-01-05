@@ -8,7 +8,7 @@ class AlumnosController extends AppController{
     
     public function index($id_curso) {
         $this->Paginator->settings = array(
-        'conditions' => array('Alumno.curso_id' => $id_curso));
+        'conditions' => array('Alumno.curso_id' => $id_curso), 'order' => array('apellido_alumno' => 'asc'));
 	$this->set('id_curso', $id_curso);
         $this->Alumno->recursive = 0;
 	$this->set('alumnos', $this->Paginator->paginate());

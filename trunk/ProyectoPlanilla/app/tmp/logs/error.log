@@ -2446,3 +2446,568 @@ Stack Trace:
 #1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
 #2 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2015-01-05 13:48:50 Error: [MissingTableException] Table tipo__notas for model Tipo_Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Tipo_Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/notas/index/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1715): DboSource->fields(Object(AppModel), 'Tipo_Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(Nota), Object(AppModel), 'belongsTo', 'Tipo_Nota', Array, Array, false)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Nota), Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(23): PaginatorComponent->paginate()
+#9 [internal function]: NotasController->index('1')
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-01-05 13:54:39 Error: [MissingTableException] Table tipo__notas for model Tipo_Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Tipo_Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/notas/index/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1715): DboSource->fields(Object(Tipo_Nota), 'Tipo_Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(Nota), Object(Tipo_Nota), 'belongsTo', 'Tipo_Nota', Array, Array, false)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Nota), Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(23): PaginatorComponent->paginate()
+#9 [internal function]: NotasController->index('1')
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-01-05 13:59:39 Error: [MissingTableException] Table tipo__notas for model Tipo_Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Tipo_Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/notas/index/c
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1715): DboSource->fields(Object(Tipo_Nota), 'Tipo_Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(Nota), Object(Tipo_Nota), 'belongsTo', 'Tipo_Nota', Array, Array, false)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Nota), Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(23): PaginatorComponent->paginate()
+#9 [internal function]: NotasController->index('c')
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-01-05 14:03:41 Error: [MissingTableException] Table tipo__notas for model Tipo_Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Tipo_Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/notas/index
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1715): DboSource->fields(Object(Tipo_Nota), 'Tipo_Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(Nota), Object(Tipo_Nota), 'belongsTo', 'Tipo_Nota', Array, Array, false)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Nota), Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(23): PaginatorComponent->paginate()
+#9 [internal function]: NotasController->index()
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-01-05 14:06:24 Error: [MissingTableException] Table tipo__notas for model Tipo_Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Tipo_Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/notas/index/1/c
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1715): DboSource->fields(Object(Tipo_Nota), 'Tipo_Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(Nota), Object(Tipo_Nota), 'belongsTo', 'Tipo_Nota', Array, Array, false)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Nota), Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(23): PaginatorComponent->paginate()
+#9 [internal function]: NotasController->index('1', 'c')
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-01-05 14:07:11 Error: [MissingTableException] Table tipo__notas for model Tipo_Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Tipo_Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/notas/index/1/c
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1715): DboSource->fields(Object(Tipo_Nota), 'Tipo_Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(Nota), Object(Tipo_Nota), 'belongsTo', 'Tipo_Nota', Array, Array, false)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Nota), Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(23): PaginatorComponent->paginate()
+#9 [internal function]: NotasController->index('1', 'c')
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-01-05 14:10:01 Error: Fatal Error (64): Cannot redeclare class TipoNota in [C:\wamp\www\ProyectoPlanilla\app\Model\Tipo_Nota.php, line 40]
+2015-01-05 14:10:01 Error: [FatalErrorException] Cannot redeclare class TipoNota
+Request URL: /ProyectoPlanilla/notas/index/1/c
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\wamp\\www\\Pro...', 40)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\wamp\\www\\Pro...', 40, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\\wamp\\www\\Pro...', 40, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-05 14:11:43 Error: [MissingTableException] Table tipo__notas for model Tipo_Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Tipo_Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/notas/index/1/c
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1715): DboSource->fields(Object(AppModel), 'Tipo_Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(Nota), Object(AppModel), 'belongsTo', 'Tipo_Nota', Array, Array, false)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Nota), Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(19): PaginatorComponent->paginate()
+#9 [internal function]: NotasController->index('1', 'c')
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-01-05 14:15:10 Error: [MissingTableException] Table tipo__notas for model Tipo_Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Tipo_Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/notas/index/1/c
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1715): DboSource->fields(Object(Tipo_Nota), 'Tipo_Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(Nota), Object(Tipo_Nota), 'belongsTo', 'Tipo_Nota', Array, Array, false)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Nota), Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(19): PaginatorComponent->paginate()
+#9 [internal function]: NotasController->index('1', 'c')
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-01-05 14:19:35 Error: [MissingTableException] Table tipo__notas for model Tipo_Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Tipo_Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/notas/index/1/c
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1715): DboSource->fields(Object(AppModel), 'Tipo_Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(Nota), Object(AppModel), 'belongsTo', 'Tipo_Nota', Array, Array, false)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Nota), Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(19): PaginatorComponent->paginate()
+#9 [internal function]: NotasController->index('1', 'c')
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-01-05 14:19:40 Error: [MissingTableException] Table tipo__notas for model Tipo_Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Tipo_Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/notas/index/1/c
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1715): DboSource->fields(Object(AppModel), 'Tipo_Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(Nota), Object(AppModel), 'belongsTo', 'Tipo_Nota', Array, Array, false)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Nota), Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(19): PaginatorComponent->paginate()
+#9 [internal function]: NotasController->index('1', 'c')
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-01-05 14:28:36 Error: [MissingTableException] Table tipo__notas for model Tipo_Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Tipo_Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/notas/index/1/c
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1715): DboSource->fields(Object(AppModel), 'Tipo_Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(Nota), Object(AppModel), 'belongsTo', 'Tipo_Nota', Array, Array, false)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Nota), Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(19): PaginatorComponent->paginate()
+#9 [internal function]: NotasController->index('1', 'c')
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-01-05 14:29:00 Error: [MissingTableException] Table tipo__notas for model Tipo_Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Tipo_Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/notas/index/1/c
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1715): DboSource->fields(Object(AppModel), 'Tipo_Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(Nota), Object(AppModel), 'belongsTo', 'Tipo_Nota', Array, Array, false)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Nota), Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(19): PaginatorComponent->paginate()
+#9 [internal function]: NotasController->index('1', 'c')
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-01-05 14:29:49 Error: [MissingViewException] View file "C:\wamp\www\ProyectoPlanilla\app\View\Notas\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ProyectoPlanilla\\app\\View\\Notas\\index.ctp',
+)
+Request URL: /ProyectoPlanilla/notas/index/1/c
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-05 14:30:12 Error: [MissingViewException] View file "C:\wamp\www\ProyectoPlanilla\app\View\Notas\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\ProyectoPlanilla\\app\\View\\Notas\\index.ctp',
+)
+Request URL: /ProyectoPlanilla/notas/index/1/c
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#4 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-05 14:47:14 Error: [MissingActionException] Action NotasController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'NotasController',
+  'action' => 'add',
+)
+Request URL: /ProyectoPlanilla/notas/add/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#2 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-05 14:59:47 Error: [MissingTableException] Table tipo__notas for model Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/tipoNotas
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1731): DboSource->fields(Object(AppModel), 'Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1233): DboSource->generateAssociationQuery(Object(TipoNota), Object(AppModel), 'hasMany', 'Nota', Array, Array, true)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1137): DboSource->queryAssociation(Object(TipoNota), Object(AppModel), 'hasMany', 'Nota', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(TipoNota), Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#9 C:\wamp\www\ProyectoPlanilla\app\Controller\TipoNotasController.php(13): PaginatorComponent->paginate()
+#10 [internal function]: TipoNotasController->index()
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TipoNotasController), Array)
+#12 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(TipoNotasController), Object(CakeRequest))
+#14 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-01-05 15:00:17 Error: [MissingActionException] Action NotasController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'NotasController',
+  'action' => 'add',
+)
+Request URL: /ProyectoPlanilla/notas/add/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#2 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-05 15:03:00 Error: [MissingActionException] Action TipoNotasController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'TipoNotasController',
+  'action' => 'edit',
+)
+Request URL: /ProyectoPlanilla/tipoNotas/edit/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(TipoNotasController), Object(CakeRequest))
+#2 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-05 15:06:57 Error: [MissingTableException] Table tipo__notas for model Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/tipoNotas/edit/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1731): DboSource->fields(Object(AppModel), 'Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1233): DboSource->generateAssociationQuery(Object(TipoNota), Object(AppModel), 'hasMany', 'Nota', Array, Array, true)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1137): DboSource->queryAssociation(Object(TipoNota), Object(AppModel), 'hasMany', 'Nota', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(TipoNota), Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('findByIdTipoNot...', Array, Object(TipoNota))
+#10 C:\wamp\www\ProyectoPlanilla\app\Controller\TipoNotasController.php(32): Model->__call('findByIdTipoNot...', Array)
+#11 C:\wamp\www\ProyectoPlanilla\app\Controller\TipoNotasController.php(32): TipoNota->findByIdTipoNota('1')
+#12 [internal function]: TipoNotasController->edit('1')
+#13 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TipoNotasController), Array)
+#14 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(TipoNotasController), Object(CakeRequest))
+#16 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2015-01-05 15:07:32 Error: [MissingTableException] Table tipo__notas for model Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/tipoNotas/edit/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1731): DboSource->fields(Object(AppModel), 'Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1233): DboSource->generateAssociationQuery(Object(TipoNota), Object(AppModel), 'hasMany', 'Nota', Array, Array, true)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1137): DboSource->queryAssociation(Object(TipoNota), Object(AppModel), 'hasMany', 'Nota', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(TipoNota), Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('findByIdTipoNot...', Array, Object(TipoNota))
+#10 C:\wamp\www\ProyectoPlanilla\app\Controller\TipoNotasController.php(32): Model->__call('findByIdTipoNot...', Array)
+#11 C:\wamp\www\ProyectoPlanilla\app\Controller\TipoNotasController.php(32): TipoNota->findByIdTipoNota('2')
+#12 [internal function]: TipoNotasController->edit('2')
+#13 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TipoNotasController), Array)
+#14 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(TipoNotasController), Object(CakeRequest))
+#16 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2015-01-05 15:08:42 Error: [MissingTableException] Table tipo__notas for model Nota was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tipo__notas',
+  'class' => 'Nota',
+  'ds' => 'default',
+)
+Request URL: /ProyectoPlanilla/tipoNotas/edit/4
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(3566): Model->setSource('tipo__notas')
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(2490): Model->schema()
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1731): DboSource->fields(Object(AppModel), 'Nota', '')
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1233): DboSource->generateAssociationQuery(Object(TipoNota), Object(AppModel), 'hasMany', 'Nota', Array, Array, true)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1137): DboSource->queryAssociation(Object(TipoNota), Object(AppModel), 'hasMany', 'Nota', Array, Array, true, Array, 0, Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(TipoNota), Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(597): Model->find('first', Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('findByIdTipoNot...', Array, Object(TipoNota))
+#10 C:\wamp\www\ProyectoPlanilla\app\Controller\TipoNotasController.php(32): Model->__call('findByIdTipoNot...', Array)
+#11 C:\wamp\www\ProyectoPlanilla\app\Controller\TipoNotasController.php(32): TipoNota->findByIdTipoNota('4')
+#12 [internal function]: TipoNotasController->edit('4')
+#13 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TipoNotasController), Array)
+#14 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(TipoNotasController), Object(CakeRequest))
+#16 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2015-01-05 16:07:07 Error: [MissingActionException] Action NotasController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'NotasController',
+  'action' => 'add',
+)
+Request URL: /ProyectoPlanilla/notas/add/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#2 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-05 16:14:10 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index' at line 1
+Request URL: /ProyectoPlanilla/notas/add/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('index', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('index', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('index', Array, Array)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('index', Array, Object(TipoNota))
+#5 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(25): Model->__call('index', Array)
+#6 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(25): TipoNota->index('1')
+#7 [internal function]: NotasController->add('1')
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-05 16:31:08 Error: Fatal Error (1): Call to a member function field() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\Controller\CierresController.php, line 14]
+2015-01-05 16:31:08 Error: [FatalErrorException] Call to a member function field() on a non-object
+Request URL: /ProyectoPlanilla/cierres/index/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 14, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 14, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-05 16:34:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cierre.escuela_id' in 'where clause'
+Request URL: /ProyectoPlanilla/cierres/index/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Cierre`...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Cierre`...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Cierre`...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Cierre), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\app\Controller\CierresController.php(16): PaginatorComponent->paginate()
+#8 [internal function]: CierresController->index('1')
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CierresController), Array)
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CierresController), Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-01-05 16:36:30 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cierre.escuela_id' in 'where clause'
+Request URL: /ProyectoPlanilla/cierres/index/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Cierre`...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Cierre`...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Cierre`...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Cierre), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\app\Controller\CierresController.php(16): PaginatorComponent->paginate()
+#8 [internal function]: CierresController->index('1')
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CierresController), Array)
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CierresController), Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-01-05 16:37:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cierre.escuela_id' in 'where clause'
+Request URL: /ProyectoPlanilla/cierres/index/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Cierre`...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Cierre`...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Cierre`...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Cierre), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\wamp\www\ProyectoPlanilla\app\Controller\CierresController.php(16): PaginatorComponent->paginate()
+#8 [internal function]: CierresController->index('1')
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(CierresController), Array)
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(CierresController), Object(CakeRequest))
+#12 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-01-05 16:53:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'setFlash' at line 1
+Request URL: /ProyectoPlanilla/alumnos/add/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('setFlash', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('setFlash', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('setFlash', Array, Array)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('setFlash', Array, Object(Alumno))
+#5 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(22): Model->__call('setFlash', Array)
+#6 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(22): Alumno->setFlash('El alumno ha si...')
+#7 [internal function]: AlumnosController->add('1')
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-05 16:53:24 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'setFlash' at line 1
+Request URL: /ProyectoPlanilla/alumnos/add/1
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('setFlash', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('setFlash', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('setFlash', Array, Array)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(808): DboSource->query('setFlash', Array, Object(Alumno))
+#5 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(22): Model->__call('setFlash', Array)
+#6 C:\wamp\www\ProyectoPlanilla\app\Controller\AlumnosController.php(22): Alumno->setFlash('El alumno ha si...')
+#7 [internal function]: AlumnosController->add('1')
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

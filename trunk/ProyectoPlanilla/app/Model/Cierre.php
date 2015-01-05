@@ -6,9 +6,9 @@ class Cierre extends AppModel{
     
     public $primaryKey = 'id_cierre';
     
-    public $belongsTo = ['Escuela' => array(
-            'className' => 'Escuela',
-            'foreignKey' => 'escuela_id'
+    public $belongsTo = ['Curso' => array(
+            'className' => 'Curso',
+            'foreignKey' => 'curso_id'
         )
         ];
     

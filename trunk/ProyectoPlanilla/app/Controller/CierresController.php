@@ -9,22 +9,20 @@ class CierresController extends AppController{
     
     public function index($id) {
         $this->Paginator->settings = array(
-        'conditions' => array('Cierre.escuela_id' => $id));
-        $this->loadModel('Escuela', $id);
-        $this->set('nombre_escuela', $this->Escuela->field('nombre_escuela'));
-        $this->set('id_escuela', $id);
+        'conditions' => array('Cierre.curso_id' => $id), 'order' => array('fecha_cierre' => 'asc'));
+        $this->set('id_curso', $id);
         
 	$this->Cierre->recursive = 0;
 	$this->set('cierres', $this->Paginator->paginate());
 	}
     
-    public function add($id_escuela){
-        $this->set('id_escuela', $id_escuela);
+    public function add($id_curso){
+        $this->set('id_curso', $id_curso);
         if($this->request->is('post')){
             $this->Cierre->create();
             if($this->Cierre->save($this->request->data)){
                 $this->Session->setFlash('El cierre ha sido guardado.');
-                return $this->redirect(array('action'=> 'index', $id_escuela));
+                return $this->redirect(array('action'=> 'index', $id_curso));
             }
             $this->Session->setFlash('El cierre no ha sido guardado. Intente nuevamente.');
         }
@@ -44,8 +42,8 @@ class CierresController extends AppController{
                 $this->Cierre->id = $id;
                 if ($this->Cierre->save($this->request->data)) {
                     $this->Session->setFlash(__('El cierre ha sido actualizado.'));
-                    $id_escuela = $this->Cierre->field('escuela_id');
-                    return $this->redirect(array('action' => 'index', $id_escuela));
+                    $id_curso = $this->Cierre->field('curso_id');
+                    return $this->redirect(array('action' => 'index', $id_curso));
                 }
                 $this->Session->setFlash(__('El cierre no ha sido guardado. Intente nuevamente.'));
         }
@@ -61,9 +59,9 @@ class CierresController extends AppController{
                 }
 
                 if ($this->Cierre->delete($id)) {
-                    $id_escuela = $this->Cierre->field('escuela_id');
+                    $id_curso = $this->Cierre->field('curso_id');
                     $this->Session->setFlash('El cierre  ha sido borrado.');
-                return $this->redirect(array('action' => 'index', $id_escuela));
+                return $this->redirect(array('action' => 'index', $id_curso));
                 }
 	}
     
