@@ -12,11 +12,9 @@
         <tr>
             <td><?php echo $alumno['Alumno']['id_alumno']; ?></td>
             <td><?php echo $alumno['Alumno']['nombre_alumno']; ?></td>
+            <td><?php echo $alumno['Alumno']['apellido_alumno']; ?></td>
             <td>
-                <?php echo $this->Html->link($alumno['Alumno']['apellido_alumno'],
-                array('controller' => 'alumnos', 'action' => 'view', $alumno['Alumno']['id_alumno'])); ?>
-            </td>
-            <td>
+                <?php echo $this->Html->link('Notas', array('controller' => 'Notas', 'action'=>'index', $alumno['Alumno']['id_alumno'], 'a')); ?>
                 <?php echo $this->Html->link('Editar', array('action'=>'edit',$alumno['Alumno']['id_alumno'])); ?>
                 <?php echo $this->Form->postLink('Borrar', array('action'=>'delete',$alumno['Alumno']['id_alumno']), array('confirm' => 'Esta seguro?')); ?>
             </td>

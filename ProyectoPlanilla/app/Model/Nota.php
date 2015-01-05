@@ -39,8 +39,8 @@ class Nota extends AppModel{
 			'finderQuery' => '',
 			'counterQuery' => ''
                 ),
-                'Tipo_Nota' => array(
-                        'className' => 'Tipo_Nota',
+                'TipoNota' => array(
+                        'className' => 'TipoNota',
 			'foreignKey' => 'tipo_nota_id',
 			'dependent' => false,
 			'conditions' => '',
