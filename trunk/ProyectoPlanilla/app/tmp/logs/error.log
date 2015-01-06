@@ -3011,3 +3011,193 @@ Stack Trace:
 #10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest))
 #11 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2015-01-06 14:41:10 Error: Fatal Error (1): Call to a member function field() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php, line 26]
+2015-01-06 14:41:10 Error: [FatalErrorException] Call to a member function field() on a non-object
+Request URL: /ProyectoPlanilla/notas/add/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 26, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 26, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-06 14:42:46 Error: Fatal Error (1): Call to a member function field() on a non-object in [C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php, line 25]
+2015-01-06 14:42:46 Error: [FatalErrorException] Call to a member function field() on a non-object
+Request URL: /ProyectoPlanilla/notas/add/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 25, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\wamp\\www\\Pro...', 25, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-06 14:55:20 Error: Fatal Error (4): syntax error, unexpected '.', expecting ',' or ';' in [C:\wamp\www\ProyectoPlanilla\app\Model\Alumno.php, line 8]
+2015-01-06 14:55:20 Error: [FatalErrorException] syntax error, unexpected '.', expecting ',' or ';'
+Request URL: /ProyectoPlanilla/notas/add/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Pro...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\Pro...', 8, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\Pro...', 8, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-06 14:55:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Alumno.Array' in 'field list'
+Request URL: /ProyectoPlanilla/notas/add/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Alumno`...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Alumno`...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Alumno`...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Alumno), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('list', Array)
+#6 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(30): Model->find('list', Array)
+#7 [internal function]: NotasController->add('2')
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-06 14:58:59 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Alumno.apellido_alumno . nombre_alumno' in 'field list'
+Request URL: /ProyectoPlanilla/notas/add/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Alumno`...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Alumno`...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Alumno`...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Alumno), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('list', Array)
+#6 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(30): Model->find('list', Array)
+#7 [internal function]: NotasController->add('2')
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-06 14:59:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Alumno.apellido_alumno "." nombre_alumno' in 'field list'
+Request URL: /ProyectoPlanilla/notas/add/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Alumno`...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Alumno`...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Alumno`...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Alumno), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('list', Array)
+#6 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(30): Model->find('list', Array)
+#7 [internal function]: NotasController->add('2')
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-06 15:00:05 Error: Fatal Error (4): syntax error, unexpected '+', expecting ',' or ';' in [C:\wamp\www\ProyectoPlanilla\app\Model\Alumno.php, line 8]
+2015-01-06 15:00:05 Error: [FatalErrorException] syntax error, unexpected '+', expecting ',' or ';'
+Request URL: /ProyectoPlanilla/notas/add/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Pro...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\wamp\\www\\Pro...', 8, Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\wamp\\www\\Pro...', 8, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-06 15:26:27 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asc' in 'order clause'
+Request URL: /ProyectoPlanilla/notas/add/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Alumno`...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Alumno`...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Alumno`...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Alumno), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('list', Array)
+#6 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(30): Model->find('list', Array)
+#7 [internal function]: NotasController->add('2')
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-06 15:26:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asc' in 'order clause'
+Request URL: /ProyectoPlanilla/notas/add/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Alumno`...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Alumno`...', Array, Array)
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Alumno`...', false)
+#4 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2947): DboSource->read(Object(Alumno), Array)
+#5 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(2919): Model->_readDataSource('list', Array)
+#6 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(30): Model->find('list', Array)
+#7 [internal function]: NotasController->add('2')
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#9 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#11 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-01-06 16:11:25 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'alumno_id' cannot be null
+Request URL: /ProyectoPlanilla/notas/add/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `pl...', Array)
+#2 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pl...')
+#3 C:\wamp\www\ProyectoPlanilla\lib\Cake\Model\Model.php(1854): DboSource->create(Object(Nota), Array, Array)
+#4 C:\wamp\www\ProyectoPlanilla\app\Controller\NotasController.php(42): Model->save(Array)
+#5 [internal function]: NotasController->add('2')
+#6 C:\wamp\www\ProyectoPlanilla\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(NotasController), Array)
+#7 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#9 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-01-06 16:14:53 Error: [MissingActionException] Action NotasController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'NotasController',
+  'action' => 'delete',
+)
+Request URL: /ProyectoPlanilla/notas/delete/2
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ProyectoPlanilla\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(NotasController), Object(CakeRequest))
+#2 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-06 16:48:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /ProyectoPlanilla/js/jquery-1.6.4.min.js
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-06 16:52:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /ProyectoPlanilla/js/jquery-1.6.4.min.js
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-06 16:53:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /ProyectoPlanilla/js/jquery-1.6.4.min.js
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-06 16:55:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /ProyectoPlanilla/js/jquery-1.6.4.min.js
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-06 16:56:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /ProyectoPlanilla/js/jquery-1.6.4.min.js
+Stack Trace:
+#0 C:\wamp\www\ProyectoPlanilla\app\webroot\index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
