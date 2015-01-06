@@ -21,15 +21,22 @@ class NotasController extends AppController{
 	}
         
     public function add($id_cierre){
+        $this->loadModel('Cierre');
+        $cierre = $this->Cierre->findByIdCierre($id_cierre);
+        $id_curso = $cierre['Cierre']['curso_id'];
         
+        //Busca los alumnos y los guarda en una variable para la vista.
         $this->loadModel('Alumno');
-        $alumnos = $this->Alumno->findAllByCursoId();
+        $alumnos = $this->Alumno->find('list', array('conditions' => array('Alumno.curso_id' => $id_curso), 'fields' => array('id_alumno','nombre_alumno', 'apellido_alumno')));
         $this->set('alumnos', $alumnos);
         
+        //Busca los tipoNotas y los guarda en una variable para la vista.
         $this->loadModel('TipoNota');
         $tipos = $this->TipoNota->find('list');
         $this->set('tipos', $tipos);
+        
         $this->set('id_cierre', $id_cierre);
+        
         if($this->request->is('post')){
             $this->Nota->create();
             if($this->Nota->save($this->request->data)){

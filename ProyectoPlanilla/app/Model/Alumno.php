@@ -5,6 +5,8 @@ class Alumno extends AppModel{
     
     public $primaryKey = 'id_alumno';
     
+    public $displayField = 'apellido_alumno';
+    
     public $belongsTo = ['Curso' => array(
         'className' => 'Curso',
         'foreingKey' => 'curso_id'
