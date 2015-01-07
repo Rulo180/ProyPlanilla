@@ -29,7 +29,7 @@ class TipoNotasController extends AppController{
                 throw new NotFoundException(__('Id invalido.'));
             }
             
-            $tipo = $this->TipoNota->findByIdTipoNota($id);
+            $tipo = $this->TipoNota->findById($id);
             if (!$tipo) {
                 throw new NotFoundException(__('Tipo invalido.'));
             }

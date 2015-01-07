@@ -10,15 +10,15 @@
 
     <?php foreach ($notas as $nota): ?>
     <tr>
-        <td><?php echo $nota['Nota']['id_nota']; ?></td>
+        <td><?php echo $nota['Nota']['id']; ?></td>
         <td>
             <?php echo $nota['Nota']['alumno_id']; ?>
         </td>
         <td><?php echo $nota['Nota']['valor_nota']; ?></td>
         <td><?php echo $nota['Nota']['tipo_nota_id']; ?></td>
         <td>    
-            <?php echo $this->Html->link('Editar', array('action'=>'edit',$nota['Nota']['id_nota'])); ?>
-            <?php echo $this->Form->postLink('Borrar', array('action'=>'delete',$nota['Nota']['id_nota']), array('confirm' => 'Esta seguro?')); ?>
+            <?php echo $this->Html->link('Editar', array('action'=>'edit',$nota['Nota']['id'])); ?>
+            <?php echo $this->Form->postLink('Borrar', array('action'=>'delete',$nota['Nota']['id']), array('confirm' => 'Esta seguro?')); ?>
         </td>
     </tr>
     <?php endforeach; ?>

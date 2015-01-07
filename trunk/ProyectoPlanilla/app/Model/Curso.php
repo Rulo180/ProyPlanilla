@@ -3,7 +3,7 @@ App::uses('AppModel', 'Model');
 
 class Curso extends AppModel{
     
-    public $primaryKey = 'id_curso';
+    //public $primaryKey = 'id_curso';
     
     
     public $belongsTo = ['Escuela' => array(

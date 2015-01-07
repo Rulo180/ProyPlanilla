@@ -33,7 +33,7 @@ class CierresController extends AppController{
                 throw new NotFoundException(__('Id invalido.'));
             }
             
-            $cierre = $this->Cierre->findByIdCierre($id);
+            $cierre = $this->Cierre->findById($id);
             if (!$cierre) {
                 throw new NotFoundException(__('Cierre invalido.'));
             }

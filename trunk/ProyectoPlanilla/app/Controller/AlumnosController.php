@@ -31,7 +31,7 @@ class AlumnosController extends AppController{
                 throw new NotFoundException(__('Id invalido.'));
             }
             
-            $alumno = $this->Alumno->findByIdAlumno($id);
+            $alumno = $this->Alumno->findById($id);
             if (!$alumno) {
                 throw new NotFoundException(__('Curso invalido.'));
             }

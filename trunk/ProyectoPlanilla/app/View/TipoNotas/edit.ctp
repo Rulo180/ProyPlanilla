@@ -6,7 +6,7 @@
     <?php
         echo $this->Form->input('nombre_tipo_nota', array('label' => 'Nombre:'));
         echo $this->Form->input('descripcion_tipo_nota', array('label' => 'Descripción:'));
-        echo $this->Form->input('id_tipo_nota', array('type' => 'hidden'));
+        echo $this->Form->input('id', array('type' => 'hidden'));
         
     ?>
 </fieldset>

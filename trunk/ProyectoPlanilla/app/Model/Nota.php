@@ -8,7 +8,7 @@ App::uses('AppModel', 'Model');
 
 class Nota extends AppModel{
     
-    public $primaryKey = 'id_nota';
+    //public $primaryKey = 'id_nota';
     
     public $displayField = 'valor_nota';
     
@@ -57,13 +57,16 @@ class Nota extends AppModel{
     public $validate = array(
             'valor_nota' => array(
                 'noVacio' => array(
-                    'rule' => 'notEmpty',
-                    'message' => 'El campo no puede quedar vacio',
-                    'required' => true
+                        'rule' => 'notEmpty',
+                        'message' => 'El campo no puede quedar vacio',
+                        'required' => true
                 ),'numerico' => array(
-                    'rule' => 'numeric',
-                    'required' => true,
-                    'message' => 'El campo trimestre debe ser númerico.'
+                        'rule' => 'numeric',
+                        'required' => true,
+                        'message' => 'El campo trimestre debe ser númerico.'
+                ),'entre0y10' => array(
+                        'rule' => array('range', 0, 10),
+                        'message' => 'Debe ingresar un valor entre 0 y 10.'
                 )
             )
     );

@@ -3,7 +3,7 @@ App::uses('AppModel', 'Model');
 
 class Alumno extends AppModel{
     
-    public $primaryKey = 'id_alumno';
+    //public $primaryKey = 'id_alumno';
     
     public $displayField = 'apellido_alumno';
     

@@ -12,16 +12,16 @@
 
     <?php foreach ($escuelas as $escuela): ?>
     <tr>
-        <td><?php echo $escuela['Escuela']['id_escuela']; ?></td>
+        <td><?php echo $escuela['Escuela']['id']; ?></td>
         <td>
             <?php echo $this->Html->link($escuela['Escuela']['nombre_escuela'],
-array('controller' => 'cursos', 'action' => 'index', $escuela['Escuela']['id_escuela'])); ?>
+array('controller' => 'cursos', 'action' => 'index', $escuela['Escuela']['id'])); ?>
         </td>
         <td><?php echo $escuela['Escuela']['nro_escuela']; ?></td>
         <td><?php echo $escuela['Escuela']['telefono_escuela']; ?></td>
         <td>
-            <?php echo $this->Html->link('Editar', array('action'=>'edit',$escuela['Escuela']['id_escuela'])); ?> - 
-            <?php echo $this->Form->postLink('Borrar', array('action'=>'delete',$escuela['Escuela']['id_escuela']), array('confirm' => 'Esta seguro?')); ?>
+            <?php echo $this->Html->link('Editar', array('action'=>'edit',$escuela['Escuela']['id'])); ?> - 
+            <?php echo $this->Form->postLink('Borrar', array('action'=>'delete',$escuela['Escuela']['id']), array('confirm' => 'Esta seguro?')); ?>
         </td>
     </tr>
     <?php endforeach; ?>

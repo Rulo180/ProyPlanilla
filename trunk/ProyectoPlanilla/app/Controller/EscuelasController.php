@@ -85,7 +85,7 @@ class EscuelasController extends AppController {
                 throw new NotFoundException(__('Id invalido.'));
             }
             
-            $escuela = $this->Escuela->findByIdEscuela($id);
+            $escuela = $this->Escuela->findById($id);
             if (!$escuela) {
                 throw new NotFoundException(__('Escuela invalida.'));
             }

@@ -16,18 +16,20 @@ class NotasController extends AppController{
         $this->Paginator->settings = array(
         'conditions' => array('Nota.alumno_id' => $id));
         }
+        
 	$this->Nota->recursive = 0;
 	$this->set('notas', $this->Paginator->paginate());
 	}
         
     public function add($id_cierre){
         $this->loadModel('Cierre');
-        $cierre = $this->Cierre->findByIdCierre($id_cierre);
+        $cierre = $this->Cierre->findById($id_cierre);
         $id_curso = $cierre['Cierre']['curso_id'];
         
         //Busca los alumnos y los guarda en una variable para la vista.
         $this->loadModel('Alumno');
-        $alumnos = $this->Alumno->find('list', array('conditions' => array('Alumno.curso_id' => $id_curso), 'fields' => array('id_alumno','nombre_alumno', 'apellido_alumno')));
+        $alumnos = $this->Alumno->find('list', array('conditions' => array('Alumno.curso_id' => $id_curso), 
+                                            'fields' => array('id','nombre_alumno', 'apellido_alumno')));
         $this->set('alumnos', $alumnos);
         
         //Busca los tipoNotas y los guarda en una variable para la vista.
