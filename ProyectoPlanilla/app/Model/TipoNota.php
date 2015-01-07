@@ -4,7 +4,7 @@ App::uses('AppModel', 'Model');
 
 class TipoNota extends AppModel{
     
-    public $primaryKey = 'id_tipo_nota';
+    //public $primaryKey = 'id_tipo_nota';
     
     public $displayField = 'nombre_tipo_nota';
     

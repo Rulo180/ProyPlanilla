@@ -12,7 +12,7 @@ class Escuela extends AppModel {
  *
  * @var string
  */
-	public $primaryKey = 'id_escuela';
+	//public $primaryKey = 'id_escuela';
 
 /**
  * Display field

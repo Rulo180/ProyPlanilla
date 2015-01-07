@@ -9,15 +9,15 @@
 
     <?php foreach ($cierres as $cierre): ?>
     <tr>
-        <td><?php echo $cierre['Cierre']['id_cierre']; ?></td>
+        <td><?php echo $cierre['Cierre']['id']; ?></td>
         <td>
             <?php echo $cierre['Cierre']['trimestre']; ?>
         </td>
         <td><?php echo $cierre['Cierre']['fecha_cierre']; ?></td>
         <td>
-            <?php echo $this->Html->link('Notas', array('controller' => 'notas', 'action'=>'index', $cierre['Cierre']['id_cierre'], 'c'));?>
-            <?php echo $this->Html->link('Editar', array('action'=>'edit',$cierre['Cierre']['id_cierre'])); ?>
-            <?php echo $this->Form->postLink('Borrar', array('action'=>'delete',$cierre['Cierre']['id_cierre']), array('confirm' => 'Esta seguro?')); ?>
+            <?php echo $this->Html->link('Notas', array('controller' => 'notas', 'action'=>'index', $cierre['Cierre']['id'], 'c'));?>
+            <?php echo $this->Html->link('Editar', array('action'=>'edit',$cierre['Cierre']['id'])); ?>
+            <?php echo $this->Form->postLink('Borrar', array('action'=>'delete',$cierre['Cierre']['id']), array('confirm' => 'Esta seguro?')); ?>
         </td>
     </tr>
     <?php endforeach; ?>

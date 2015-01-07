@@ -4,7 +4,7 @@ App::uses('AppModel', 'Model');
 
 class Cierre extends AppModel{
     
-    public $primaryKey = 'id_cierre';
+    //public $primaryKey = 'id_cierre';
     
     public $belongsTo = ['Curso' => array(
             'className' => 'Curso',
