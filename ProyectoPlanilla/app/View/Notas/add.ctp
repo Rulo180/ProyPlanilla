@@ -24,20 +24,5 @@ echo $this->Form->create('Nota'); ?>
 /*
  * Codigo copiado de un ejemplo. Falta importar el jQuery
  */
-    echo $this->Html->script(array('jquery-1.11.2.min'));?>
-<script type='text/javascript'>
-	var lastRow=0;
-	
-	function agregarNota() {
-		lastRow++;
-		$("#mytable tbody>tr:#nota0").clone(true).attr('id','nota'+lastRow).removeAttr('style').insertBefore("#mytable tbody>tr:#trAdd");
-		$("#nota"+lastRow+" button").attr('onclick','borrarNota('+lastRow+')');
-		$("#nota"+lastRow+" input:first").attr('name','data[Nota]['+lastRow+'][alumno_id]').attr('id','alumno_id'+lastRow);
-		$("#nota"+lastRow+" input:eq(1)").attr('name','data[Nota]['+lastRow+'][valor_nota]').attr('id','valor_nota'+lastRow);
-		$("#nota"+lastRow+" input:eq(2)").attr('name','data[Nota]['+lastRow+'][tipo_nota_id]').attr('id','tipo_nota_id'+lastRow);
-	}
-	
-	function borrarNota(x) {
-		$("#nota"+x).remove();
-	}
-</script>
+   echo $this->Html->script(array('jquery-1.11.2'));
+   echo $this->Html->script(array("funciones"))?>
