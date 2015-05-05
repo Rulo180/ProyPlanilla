@@ -118,7 +118,7 @@ class EscuelasController extends AppController {
 
                 if ($this->Escuela->delete($id)) {
                     $this->Session->setFlash(
-                    __('La escuela '.$this->Escuela->field(nombre_escuela).' ha sido borrada.', h($id))
+                    __('La escuela '.$this->Escuela->field('nombre_escuela').' ha sido borrada.', h($id))
                 );
                 return $this->redirect(array('action' => 'index'));
                 }
