@@ -15,6 +15,7 @@ class AlumnosController extends AppController{
 	}
         
     public function add($id_curso) {
+        
                 $this->set('id_curso', $id_curso);
                 if ($this->request->is('post')) {
                     $this->Alumno->create();
@@ -24,6 +25,7 @@ class AlumnosController extends AppController{
                 }
                 $this->Session->setFlash(__('El alumno no ha sido guardado. Intente nuevamente.'));
                 }
+                
     }
     
     public function edit($id){

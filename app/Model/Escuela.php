@@ -21,6 +21,26 @@ class Escuela extends AppModel {
  */
 	public $displayField = 'nombre_escuela';
 
+  /**
+   *    Relationships
+   * @var type 
+   */
+        
+        public $hasMany = array(
+		'cursos' => array(
+			'className' => 'Curso',
+			'foreignKey' => 'escuela_id',
+			'dependent' => true,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
 /**
  * Validation rules
  *
@@ -53,20 +73,5 @@ class Escuela extends AppModel {
  *
  * @var array
  */
-	public $hasMany = array(
-		'cursos' => array(
-			'className' => 'Curso',
-			'foreignKey' => 'escuela_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		)
-	);
 
 }

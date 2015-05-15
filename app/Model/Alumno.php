@@ -7,10 +7,31 @@ class Alumno extends AppModel{
     
     public $displayField = 'apellido_alumno';
     
+    /**
+     *  Relationships
+     * @var type 
+     */
     public $belongsTo = ['Curso' => array(
         'className' => 'Curso',
         'foreingKey' => 'curso_id'
     )];
+    
+    public $hasMany = array(
+		'notas' => array(
+			'className' => 'Nota',
+			'foreignKey' => 'alumno_id',
+			'dependent' => true,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+    
     
     public $validate = array(
             'nombre_alumno' => array(

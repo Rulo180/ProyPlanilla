@@ -5,12 +5,32 @@ class Curso extends AppModel{
     
     //public $primaryKey = 'id_curso';
     
-    
+    /**
+     * Relationships
+     * @var type 
+     */
     public $belongsTo = ['Escuela' => array(
             'className' => 'Escuela',
             'foreignKey' => 'escuela_id'
         )
         ];
+    
+    
+    public $hasMany = array(
+		'cierres' => array(
+			'className' => 'Cierre',
+			'foreignKey' => 'curso_id',
+			'dependent' => true,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
     
     
     public $validate = array(
