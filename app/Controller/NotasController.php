@@ -4,18 +4,15 @@ App::uses('AppController', 'Controller');
 
 class NotasController extends AppController{
     
-    var $helpers = array('Html', 'Form');
+    var $helpers = array('Html', 'Form', 'Js');
     public $components = array('Paginator', 'Session');
     
-    public function index($id, $filtro) {
-        if($filtro == 'c'){
+    
+    public function index($id) {
+        
         $this->Paginator->settings = array(
         'conditions' => array('Nota.cierre_id' => $id));
         $this->set('id_cierre', $id);
-        } elseif ($filtro == 'a') {
-        $this->Paginator->settings = array(
-        'conditions' => array('Nota.alumno_id' => $id));
-        }
         
 	$this->Nota->recursive = 0;
 	$this->set('notas', $this->Paginator->paginate());
@@ -28,8 +25,7 @@ class NotasController extends AppController{
         
         //Busca los alumnos y los guarda en una variable para la vista.
         $this->loadModel('Alumno');
-        $alumnos = $this->Alumno->find('list', array('conditions' => array('Alumno.curso_id' => $id_curso), 
-                                            'fields' => array('id','nombre_alumno', 'apellido_alumno')));
+        $alumnos = $this->Alumno->find('list', array('conditions' => array('Alumno.curso_id' => $id_curso)));
         $this->set('alumnos', $alumnos);
         
         //Busca los tipoNotas y los guarda en una variable para la vista.

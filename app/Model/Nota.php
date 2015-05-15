@@ -12,6 +12,11 @@ class Nota extends AppModel{
     
     public $displayField = 'valor_nota';
     
+    /**
+     *  Relationships
+     * @var type 
+     */
+    
     public $belongsTo = array(
                 'Alumno' => array(
                         'className' => 'Alumno',

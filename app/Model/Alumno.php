@@ -5,7 +5,9 @@ class Alumno extends AppModel{
     
     //public $primaryKey = 'id_alumno';
     
-    public $displayField = 'apellido_alumno';
+    public $virtualFields = array('Nombre_Completo' => "CONCAT(Alumno.apellido_alumno, ' ', Alumno.nombre_alumno)");
+    
+    public $displayField = 'Nombre_Completo';
     
     /**
      *  Relationships

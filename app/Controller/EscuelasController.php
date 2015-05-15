@@ -16,13 +16,19 @@ class EscuelasController extends AppController {
  * @var array
  */
 	public $components = array('Paginator', 'Session');
-        
+   
+        public $paginate = array(
+        'limit' => 5,
+        'order' => array('Escuela.nombre_escuela' => 'asc'));
 /**
  * index method
  *
  * @return void
  */
 	public function index() {
+            
+                $this->Paginator->settings = $this->paginate;
+                
 		$this->Escuela->recursive = 0;
 		$this->set('escuelas', $this->Paginator->paginate());
 	}

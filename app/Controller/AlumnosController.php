@@ -20,7 +20,7 @@ class AlumnosController extends AppController{
                 if ($this->request->is('post')) {
                     $this->Alumno->create();
                 if ($this->Alumno->save($this->request->data)) {
-                    $this->Alumno->setFlash(__('El alumno ha sido guardado.'));
+                    $this->Session->setFlash(__('El alumno ha sido guardado.'));
                     return $this->redirect(array('action' => 'index', $id_curso));
                 }
                 $this->Session->setFlash(__('El alumno no ha sido guardado. Intente nuevamente.'));
@@ -64,5 +64,16 @@ class AlumnosController extends AppController{
                     return $this->redirect(array('action' => 'index', $id_curso));
                 }
 	}
+        
+       public function verNotas($id = null){
+
+           $this->set('nombre_alumno', $this->Alumno->field('Nombre_Completo'));
+           
+                     
+           $this->loadModel('Nota');
+           $this->Nota->recursive = 0;
+           $notas = $this->Nota->find('all', array('conditions' => array('Nota.alumno_id' => $id)));
+           $this->set('notas', $notas);
+       }
     
 }

@@ -1,7 +1,7 @@
 function agregarNota(){
     //Mi idea seria buscar la 1era fila de la tabla para copiarla
     //Dsps agregar esa copia de la 1era fila al final de la tabla
-    var filaVacia = $("tablaNotas").first("nota0");
+    var filaVacia = $("tablaNotas").first("#nota0");
     $("tablaNotas").append(filaVacia);
 }
 

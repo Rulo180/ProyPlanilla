@@ -3,18 +3,17 @@
 <table>
     <tr>
         <th>ID</th>
-        <th>Nombre</th>
-        <th>Apellido</th>
+        <th>Apellido/Nombre</th>
         <th>Acciones</th>
     </tr>
     
     <?php foreach($alumnos as $alumno): ?>
         <tr>
             <td><?php echo $alumno['Alumno']['id']; ?></td>
-            <td><?php echo $alumno['Alumno']['nombre_alumno']; ?></td>
-            <td><?php echo $alumno['Alumno']['apellido_alumno']; ?></td>
+            <td><?php echo $alumno['Alumno']['Nombre_Completo']; ?></td>
+            
             <td>
-                <?php echo $this->Html->link('Notas', array('controller' => 'Notas', 'action'=>'index', $alumno['Alumno']['id'], 'a')); ?>
+                <?php echo $this->Html->link('Notas', array( 'action'=>'verNotas', $alumno['Alumno']['id'])); ?>
                 <?php echo $this->Html->link('Editar', array('action'=>'edit',$alumno['Alumno']['id'])); ?>
                 <?php echo $this->Form->postLink('Borrar', array('action'=>'delete',$alumno['Alumno']['id']), array('confirm' => 'Esta seguro?')); ?>
             </td>

@@ -16,7 +16,7 @@ class Cierre extends AppModel{
 		'notas' => array(
 			'className' => 'Nota',
 			'foreignKey' => 'cierre_id',
-			'dependent' => false,
+			'dependent' => true,
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',

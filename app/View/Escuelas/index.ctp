@@ -1,10 +1,10 @@
 <h1><b>Lista de Escuelas</b></h1>
 <table>
     <tr>
-        <th>Id</th>
-        <th>Nombre</th>
-        <th>Número</th>
-        <th>Teléfono</th>
+        <th><?php echo $this->Paginator->sort('id_escuela', 'ID');?></th>
+        <th><?php echo $this->Paginator->sort('nombre_escuela', 'Nombre');?></th>
+        <th><?php echo $this->Paginator->sort('nro_escuela', 'Nro');?></th>
+        <th><?php echo $this->Paginator->sort('telefono_escuela', 'Teléfono');?></th>
         <th>Acciones</th>
     </tr>
 

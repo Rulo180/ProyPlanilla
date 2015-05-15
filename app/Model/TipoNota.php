@@ -30,10 +30,6 @@ class TipoNota extends AppModel{
                     'rule' => 'notEmpty',
                     'message' => 'El campo no puede quedar vacio',
                     'required' => true
-                ),'alfanumerico' => array(
-                    'rule' => 'alphaNumeric',
-                    'required' => true,
-                    'message' => 'El campo trimestre debe ser númerico.'
                 )
             )
     );
